@@ -43,7 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
           title: Text(widget.title),
         ),
         body: WebView(
-          initialUrl: 'https://www.google.com',
+          initialUrl: 'https://wonderful-fermat-a6517f.netlify.app',
           javascriptMode: JavascriptMode.unrestricted,
           onWebViewCreated: (WebViewController c) {
             
