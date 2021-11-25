@@ -40,14 +40,18 @@ class _MyHomePageState extends State<MyHomePage> {
     
     return Scaffold(
         appBar: AppBar(
+        elevation: 0.0,
+        backgroundColor: Colors.transparent,
           title: Text(widget.title),
         ),
-        body: WebView(
-          initialUrl: 'https://wonderful-fermat-a6517f.netlify.app',
-          javascriptMode: JavascriptMode.unrestricted,
-          onWebViewCreated: (WebViewController c) {
-            
-          },
+        body: Container(
+          child: WebView(
+            initialUrl: 'https://wonderful-fermat-a6517f.netlify.app',
+            javascriptMode: JavascriptMode.unrestricted,
+            onWebViewCreated: (WebViewController c) {
+              
+            },
+          ),
         )
         // This trailing comma makes auto-formatting nicer for build methods.
         );
