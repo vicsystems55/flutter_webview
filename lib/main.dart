@@ -46,7 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         body: Container(
           child: WebView(
-            initialUrl: 'https://wonderful-fermat-a6517f.netlify.app',
+            initialUrl: 'https://app.pecece.com',
             javascriptMode: JavascriptMode.unrestricted,
             onWebViewCreated: (WebViewController c) {
               
