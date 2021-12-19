@@ -39,14 +39,10 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     
     return Scaffold(
-        appBar: AppBar(
-        elevation: 0.0,
-        backgroundColor: Colors.transparent,
-          title: Text(widget.title),
-        ),
+        
         body: Container(
           child: WebView(
-            initialUrl: 'https://app.pecece.com',
+            initialUrl: 'https://mphoenix.netlify.app/',
             javascriptMode: JavascriptMode.unrestricted,
             onWebViewCreated: (WebViewController c) {
               
