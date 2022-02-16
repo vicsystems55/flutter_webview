@@ -40,13 +40,15 @@ class _MyHomePageState extends State<MyHomePage> {
     
     return Scaffold(
         
-        body: Container(
-          child: WebView(
-            initialUrl: 'https://mphoenix.netlify.app/',
-            javascriptMode: JavascriptMode.unrestricted,
-            onWebViewCreated: (WebViewController c) {
-              
-            },
+        body: SafeArea(
+          child: Container(
+            child: WebView(
+              initialUrl: 'https://pececeblog.netlify.app',
+              javascriptMode: JavascriptMode.unrestricted,
+              onWebViewCreated: (WebViewController c) {
+                
+              },
+            ),
           ),
         )
         // This trailing comma makes auto-formatting nicer for build methods.
